@@ -9,3 +9,5 @@ jobs:
       - name: show github context
         run: echo '${{ toJSON(github)}}'
       - uses: sofusalbertsen/custom-action@main
+        with:
+          myInput: "sofus"
