@@ -8,3 +8,4 @@ jobs:
         run: echo hello world
       - name: show github context
         run: echo '${{ toJSON(github)}}'
+      - uses: sofusalbertsen/custom-action@main
