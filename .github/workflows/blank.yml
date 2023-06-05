@@ -1,0 +1,10 @@
+name: my-first-workflow
+on: [workflow_dispatch]
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: output hello world
+        run: echo hello world
+      - name: show github context
+        run: echo '${{ toJSON(github)}}'
