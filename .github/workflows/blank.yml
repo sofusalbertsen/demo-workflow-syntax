@@ -15,3 +15,8 @@ jobs:
         uses: docker://hello-world
       - name: look at the os-release
         run: cat /etc/os-release
+      - name: Group of log lines
+        run: |
+            echo "::group::My title"
+            echo "Inside group"
+            echo "::endgroup::"
